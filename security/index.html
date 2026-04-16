@@ -1,73 +1,61 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Security Policy — Orchid</title>
-<meta name="description" content="How to report security vulnerabilities in Orchid.">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="canonical" href="https://runorchid.com/security">
-<style>
-  :root { color-scheme: light dark; }
-  html { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
-  body { max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; }
-  h1, h2 { font-weight: 600; letter-spacing: -0.01em; }
-  h1 { margin-bottom: 0.25rem; }
-  h2 { margin-top: 2.25rem; }
-  p.lede { color: color-mix(in srgb, CanvasText 65%, Canvas); margin-top: 0; }
-  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; }
-  pre { background: color-mix(in srgb, CanvasText 8%, Canvas); padding: 0.9rem 1rem; border-radius: 6px; overflow-x: auto; }
-  blockquote { margin: 1rem 0; padding: 0.5rem 1rem; border-left: 3px solid color-mix(in srgb, CanvasText 40%, Canvas); color: color-mix(in srgb, CanvasText 75%, Canvas); }
-  a { color: inherit; text-underline-offset: 3px; }
-  .back { display: inline-block; margin-top: 3rem; font-size: 0.9rem; }
-</style>
-</head>
-<body>
-  <h1>Security Policy</h1>
-  <p class="lede">How to report security vulnerabilities in Orchid.</p>
-
-  <p>Orchid is proprietary software. If you believe you have found a security
-  vulnerability in Orchid — Trellis (server), Petal (agent), the official
-  container images, or the official Terraform/Ansible/Packer deployment
-  artifacts — <strong>report it privately</strong> to:</p>
-
-  <blockquote><code><a href="mailto:security@runorchid.com">security@runorchid.com</a></code></blockquote>
-
-  <p>Do <strong>not</strong> file security issues in any Orchid source repository, PR,
-  commit message, or chat channel. Public disclosure before coordination
-  forfeits safe-harbor protection.</p>
-
-  <h2>What to include</h2>
-  <ul>
-    <li>A description of the issue and its impact.</li>
-    <li>Steps to reproduce (minimal proof-of-concept preferred).</li>
-    <li>Affected component, image tag or version, and environment.</li>
-    <li>Any suggested mitigation, if you have one.</li>
-  </ul>
-
-  <h2>PGP</h2>
-  <p>Encrypt reports to the Orchid Security key:</p>
-  <pre>Fingerprint:  925F 279B E759 7DDA 3E31  2E14 59A3 A2B8 F3A2 EA90
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="strict-origin-when-cross-origin"><title>Security Policy — Orchid</title><meta name="description" content="How to report security vulnerabilities in Orchid."><link rel="canonical" href="https://runorchid.com/security/"><meta property="og:title" content="Security Policy — Orchid"><meta property="og:description" content="How to report security vulnerabilities in Orchid."><meta property="og:type" content="website"><meta property="og:url" content="https://runorchid.com/security/"><meta name="twitter:card" content="summary"><script>
+      (() => {
+        try {
+          const stored = localStorage.getItem('theme');
+          if (stored === 'light' || stored === 'dark') {
+            document.documentElement.setAttribute('data-theme', stored);
+          }
+        } catch (_) {}
+      })();
+    </script><link rel="stylesheet" href="/_astro/index.miz5jpHQ.css">
+<style>.prose[data-astro-cid-rpovodi2]{max-width:42rem;padding:5rem 0 4rem}.prose[data-astro-cid-rpovodi2] h1[data-astro-cid-rpovodi2]{margin-bottom:.35rem}.prose[data-astro-cid-rpovodi2] h2[data-astro-cid-rpovodi2]{font-size:1.35rem;font-family:var(--sans);font-weight:600;margin-top:2.5rem;margin-bottom:.5rem}.prose[data-astro-cid-rpovodi2] p[data-astro-cid-rpovodi2]{color:var(--fg)}.prose[data-astro-cid-rpovodi2] p[data-astro-cid-rpovodi2].muted{color:var(--fg-dim)}.prose[data-astro-cid-rpovodi2] ul[data-astro-cid-rpovodi2]{padding-left:1.25rem;color:var(--fg-dim)}.prose[data-astro-cid-rpovodi2] ul[data-astro-cid-rpovodi2] li[data-astro-cid-rpovodi2]{margin:.25rem 0}.prose[data-astro-cid-rpovodi2] blockquote[data-astro-cid-rpovodi2]{margin:1rem 0;padding:.75rem 1rem;border-left:2px solid var(--accent);background:var(--bg-elev);border-radius:0 var(--radius) var(--radius) 0}.prose[data-astro-cid-rpovodi2] pre[data-astro-cid-rpovodi2]{background:var(--bg-elev);border:1px solid var(--rule);padding:.85rem 1rem;border-radius:var(--radius);overflow-x:auto;font-size:.85rem;color:var(--fg-dim)}.back[data-astro-cid-rpovodi2]{display:inline-block;margin-top:3rem;color:var(--fg-dim);font-family:var(--mono);font-size:.85rem;text-decoration:none}.back[data-astro-cid-rpovodi2]:hover{color:var(--accent)}
+</style></head> <body> <nav data-astro-cid-dmqpwcec> <div class="inner" data-astro-cid-dmqpwcec> <a class="brand" href="/" data-astro-cid-dmqpwcec><span class="dot" aria-hidden="true" data-astro-cid-dmqpwcec></span>Orchid</a> <div class="links" data-astro-cid-dmqpwcec> <a href="/" data-astro-cid-dmqpwcec>Home</a> <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme" data-astro-cid-dmqpwcec>☀</button> </div> </div> </nav> <main> <div class="container" data-astro-cid-rpovodi2><article class="prose" data-astro-cid-rpovodi2><span class="eyebrow" data-astro-cid-rpovodi2>Policy</span><h1 data-astro-cid-rpovodi2>Security Policy</h1><p class="muted" data-astro-cid-rpovodi2>How to report security vulnerabilities in Orchid.</p><p data-astro-cid-rpovodi2>
+Orchid is proprietary software. If you believe you have found a
+        security vulnerability in Orchid — Trellis (server), Petal (agent),
+        the official container images, or the official
+        Terraform/Ansible/Packer deployment artifacts —
+<strong data-astro-cid-rpovodi2>report it privately</strong> to:
+</p><blockquote data-astro-cid-rpovodi2><code data-astro-cid-rpovodi2><a href="mailto:security@runorchid.com" data-astro-cid-rpovodi2>security@runorchid.com</a></code></blockquote><p data-astro-cid-rpovodi2>
+Do <strong data-astro-cid-rpovodi2>not</strong> file security issues in any Orchid source
+        repository, PR, commit message, or chat channel. Public disclosure
+        before coordination forfeits safe-harbor protection.
+</p><h2 data-astro-cid-rpovodi2>What to include</h2><ul data-astro-cid-rpovodi2><li data-astro-cid-rpovodi2>A description of the issue and its impact.</li><li data-astro-cid-rpovodi2>Steps to reproduce (minimal proof-of-concept preferred).</li><li data-astro-cid-rpovodi2>Affected component, image tag or version, and environment.</li><li data-astro-cid-rpovodi2>Any suggested mitigation, if you have one.</li></ul><h2 data-astro-cid-rpovodi2>PGP</h2><p data-astro-cid-rpovodi2>Encrypt reports to the Orchid Security key:</p><pre data-astro-cid-rpovodi2>Fingerprint:  925F 279B E759 7DDA 3E31  2E14 59A3 A2B8 F3A2 EA90
 Key ID:       59A3A2B8F3A2EA90
 UID:          Orchid Security &lt;security@runorchid.com&gt;
 Algorithm:    RSA 4096
-Expires:      2029-04-15</pre>
-  <p>Public key: <a href="/.well-known/security-pubkey.asc"><code>/.well-known/security-pubkey.asc</code></a></p>
-  <p>Unencrypted reports are still accepted — but anything containing
-  reproducible exploit detail or customer-specific impact should be
-  encrypted.</p>
-
-  <h2>What happens next</h2>
-  <p>Orchid will acknowledge receipt within <strong>2 business days</strong> and provide
-  an initial triage decision within <strong>5 business days</strong>.</p>
-  <p>A machine-readable copy of this policy is published at:</p>
-  <blockquote><a href="/.well-known/security.txt"><code>https://runorchid.com/.well-known/security.txt</code></a></blockquote>
-
-  <h2>Not a security issue?</h2>
-  <p>Functional bugs, outages, and support questions go to
-  <a href="mailto:support@runorchid.com"><code>support@runorchid.com</code></a>,
-  not the security address.</p>
-
-  <a class="back" href="/">← Home</a>
-</body>
-</html>
+Expires:      2029-04-15</pre><p data-astro-cid-rpovodi2>
+Public key:
+<a href="/.well-known/security-pubkey.asc" data-astro-cid-rpovodi2><code data-astro-cid-rpovodi2>/.well-known/security-pubkey.asc</code></a></p><p class="muted" data-astro-cid-rpovodi2>
+Unencrypted reports are still accepted — but anything containing
+        reproducible exploit detail or customer-specific impact should be
+        encrypted.
+</p><h2 data-astro-cid-rpovodi2>What happens next</h2><p data-astro-cid-rpovodi2>
+Orchid will acknowledge receipt within <strong data-astro-cid-rpovodi2>2 business days</strong>
+and provide an initial triage decision within <strong data-astro-cid-rpovodi2>5 business
+        days</strong>.
+</p><p data-astro-cid-rpovodi2>A machine-readable copy of this policy is published at:</p><blockquote data-astro-cid-rpovodi2><a href="/.well-known/security.txt" data-astro-cid-rpovodi2><code data-astro-cid-rpovodi2>https://runorchid.com/.well-known/security.txt</code></a></blockquote><h2 data-astro-cid-rpovodi2>Not a security issue?</h2><p data-astro-cid-rpovodi2>
+Functional bugs, outages, and support questions go to
+<a href="mailto:support@runorchid.com" data-astro-cid-rpovodi2><code data-astro-cid-rpovodi2>support@runorchid.com</code></a>,
+        not the security address.
+</p><a class="back" href="/" data-astro-cid-rpovodi2>← Home</a></article></div> </main> <footer data-astro-cid-sz7xmlte> <div class="container" data-astro-cid-sz7xmlte> <div class="grid" data-astro-cid-sz7xmlte> <div data-astro-cid-sz7xmlte> <div class="brand" data-astro-cid-sz7xmlte>Orchid</div> <div class="tagline" data-astro-cid-sz7xmlte>A software shop, in a box.</div> </div> <div class="links" data-astro-cid-sz7xmlte> <a href="/security" data-astro-cid-sz7xmlte>Security policy</a> <a href="/.well-known/security.txt" data-astro-cid-sz7xmlte>security.txt</a> <a href="/.well-known/security-pubkey.asc" data-astro-cid-sz7xmlte>PGP public key</a> <a href="mailto:hello@runorchid.com" data-astro-cid-sz7xmlte>hello@runorchid.com</a> </div> </div> <div class="bottom" data-astro-cid-sz7xmlte> <span data-astro-cid-sz7xmlte>© 2026 Orchid. All rights reserved.</span> <span data-astro-cid-sz7xmlte>runorchid.com</span> </div> </div> </footer> <script>
+      (() => {
+        const btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+        const getPref = () => {
+          const stored = localStorage.getItem('theme');
+          if (stored) return stored;
+          return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        };
+        const render = (t) => {
+          btn.textContent = t === 'light' ? '☾' : '☀';
+          btn.setAttribute('aria-label', t === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+        };
+        render(getPref());
+        btn.addEventListener('click', () => {
+          const next = getPref() === 'light' ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          render(next);
+        });
+      })();
+    </script> </body> </html>

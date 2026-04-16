@@ -1,0 +1,9 @@
+# Orchid security contact (RFC 9116)
+# https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:security@runorchid.com
+Expires: 2027-04-16T00:00:00.000Z
+Encryption: https://runorchid.com/.well-known/security-pubkey.asc
+Preferred-Languages: en
+Canonical: https://runorchid.com/.well-known/security.txt
+Policy: https://runorchid.com/security

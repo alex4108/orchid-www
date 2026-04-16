@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security Policy — Orchid</title>
+<meta name="description" content="How to report security vulnerabilities in Orchid.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://runorchid.com/security">
+<style>
+  :root { color-scheme: light dark; }
+  html { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+  body { max-width: 44rem; margin: 3rem auto; padding: 0 1.25rem; }
+  h1, h2 { font-weight: 600; letter-spacing: -0.01em; }
+  h1 { margin-bottom: 0.25rem; }
+  h2 { margin-top: 2.25rem; }
+  p.lede { color: color-mix(in srgb, CanvasText 65%, Canvas); margin-top: 0; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; }
+  pre { background: color-mix(in srgb, CanvasText 8%, Canvas); padding: 0.9rem 1rem; border-radius: 6px; overflow-x: auto; }
+  blockquote { margin: 1rem 0; padding: 0.5rem 1rem; border-left: 3px solid color-mix(in srgb, CanvasText 40%, Canvas); color: color-mix(in srgb, CanvasText 75%, Canvas); }
+  a { color: inherit; text-underline-offset: 3px; }
+  .back { display: inline-block; margin-top: 3rem; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <h1>Security Policy</h1>
+  <p class="lede">How to report security vulnerabilities in Orchid.</p>
+
+  <p>Orchid is proprietary software. If you believe you have found a security
+  vulnerability in Orchid — Trellis (server), Petal (agent), the official
+  container images, or the official Terraform/Ansible/Packer deployment
+  artifacts — <strong>report it privately</strong> to:</p>
+
+  <blockquote><code><a href="mailto:security@runorchid.com">security@runorchid.com</a></code></blockquote>
+
+  <p>Do <strong>not</strong> file security issues in any Orchid source repository, PR,
+  commit message, or chat channel. Public disclosure before coordination
+  forfeits safe-harbor protection.</p>
+
+  <h2>What to include</h2>
+  <ul>
+    <li>A description of the issue and its impact.</li>
+    <li>Steps to reproduce (minimal proof-of-concept preferred).</li>
+    <li>Affected component, image tag or version, and environment.</li>
+    <li>Any suggested mitigation, if you have one.</li>
+  </ul>
+
+  <h2>PGP</h2>
+  <p>Encrypt reports to the Orchid Security key:</p>
+  <pre>Fingerprint:  925F 279B E759 7DDA 3E31  2E14 59A3 A2B8 F3A2 EA90
+Key ID:       59A3A2B8F3A2EA90
+UID:          Orchid Security &lt;security@runorchid.com&gt;
+Algorithm:    RSA 4096
+Expires:      2029-04-15</pre>
+  <p>Public key: <a href="/.well-known/security-pubkey.asc"><code>/.well-known/security-pubkey.asc</code></a></p>
+  <p>Unencrypted reports are still accepted — but anything containing
+  reproducible exploit detail or customer-specific impact should be
+  encrypted.</p>
+
+  <h2>What happens next</h2>
+  <p>Orchid will acknowledge receipt within <strong>2 business days</strong> and provide
+  an initial triage decision within <strong>5 business days</strong>.</p>
+  <p>A machine-readable copy of this policy is published at:</p>
+  <blockquote><a href="/.well-known/security.txt"><code>https://runorchid.com/.well-known/security.txt</code></a></blockquote>
+
+  <h2>Not a security issue?</h2>
+  <p>Functional bugs, outages, and support questions go to
+  <a href="mailto:support@runorchid.com"><code>support@runorchid.com</code></a>,
+  not the security address.</p>
+
+  <a class="back" href="/">← Home</a>
+</body>
+</html>
